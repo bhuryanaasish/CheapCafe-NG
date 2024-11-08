@@ -1,0 +1,138 @@
+<div class="main">
+    <section class="signup">
+        <div class="container-fluid">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="form-title">User Registration</h2>
+                    <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+                        <div class="form-group">
+                            <label for="firstName"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input 
+                                type="text" 
+                                id="firstName" 
+                                name="firstName" 
+                                [(ngModel)]="firstName" 
+                                #firstNameInput="ngModel"
+                                required 
+                                placeholder="First Name" />
+                            <div *ngIf="firstNameInput.invalid && firstNameInput.touched" class="text-danger">
+                                First Name is required.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input 
+                                type="text" 
+                                id="lastName" 
+                                name="lastName" 
+                                [(ngModel)]="lastName" 
+                                #lastNameInput="ngModel"
+                                required 
+                                placeholder="Last Name" />
+                            <div *ngIf="lastNameInput.invalid && lastNameInput.touched" class="text-danger">
+                                Last Name is required.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><i class="zmdi zmdi-email"></i></label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                [(ngModel)]="email" 
+                                #emailInput="ngModel"
+                                required 
+                                placeholder="Enter Your Email" />
+                            <div *ngIf="emailInput.invalid && emailInput.touched" class="text-danger">
+                                A valid email is required.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address"><i class="zmdi zmdi-home"></i></label>
+                            <input 
+                                type="text" 
+                                id="address" 
+                                name="address" 
+                                [(ngModel)]="address" 
+                                #addressInput="ngModel"
+                                required 
+                                placeholder="Enter Your Address" />
+                            <div *ngIf="addressInput.invalid && addressInput.touched" class="text-danger">
+                                Address is required.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone"><i class="zmdi zmdi-phone"></i></label>
+                            <input 
+                                type="text" 
+                                id="phone" 
+                                name="phone" 
+                                [(ngModel)]="phone" 
+                                #phoneInput="ngModel"
+                                required 
+                                placeholder="Phone Number" />
+                            <div *ngIf="phoneInput.invalid && phoneInput.touched" class="text-danger">
+                                Phone number is required.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                [(ngModel)]="password" 
+                                #passwordInput="ngModel"
+                                required 
+                                placeholder="Password" />
+                            <div *ngIf="passwordInput.invalid && passwordInput.touched" class="text-danger">
+                                Password is required.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword"><i class="zmdi zmdi-lock-outline"></i></label>
+                            <input 
+                                type="password" 
+                                id="confirmPassword" 
+                                name="confirmPassword" 
+                                [(ngModel)]="confirmPassword" 
+                                #confirmPasswordInput="ngModel"
+                                required 
+                                placeholder="Confirm Password" />
+                            <div *ngIf="confirmPasswordInput.invalid && confirmPasswordInput.touched" class="text-danger">
+                                Please confirm your password.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input 
+                                type="checkbox" 
+                                id="agree-term" 
+                                name="agreeTerm" 
+                                [(ngModel)]="agreeTerm" 
+                                #agreeTermInput="ngModel" 
+                                required />
+                            <label for="agree-term" class="label-agree-term">
+                                <span><span></span></span>I agree to all statements in 
+                                <a href="#" class="term-service">Terms of Service</a>
+                            </label>
+                        </div>
+                        <div class="form-group form-button">
+                            <button type="submit" [disabled]="registerForm.invalid" class="form-submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="signup-image">
+                    <figure><img src="assets/img/signup-image.jpg" alt="sign up image"></figure>
+                    <a routerLink="/login" class="signup-image-link">I am already a member</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

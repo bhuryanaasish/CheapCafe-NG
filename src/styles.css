@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import './Content/assets/css/maicons.css';
+@import './Content/assets/css/bootstrap.css';
+/* @import './Content/style.css'; */
+@import './Content/assets/vendor/owl-carousel/css/owl.carousel.css';
+@import './Content/assets/vendor/animate/animate.css';
+@import './Content/assets/css/theme.css';
+@import './Content/cardcss.css';
+
+@import './Content/material-design-iconic-font.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'

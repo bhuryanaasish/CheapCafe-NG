@@ -1,0 +1,63 @@
+<div class="main">
+    <section class="sign-in">
+        <div class="container-fluid">
+            <div class="signin-content">
+                <div class="signin-image">
+                    <figure>
+                        <img src="assets/img/signin-image.jpg" alt="sign in image">
+                    </figure>
+                    <a href="javascript:void(0)" class="signup-image-link">Forgot Password</a>
+                    <a routerLink="/register" class="signup-image-link">Create an account</a>
+                </div>
+
+                <div class="signin-form">
+                    <h2 class="form-title">User Login</h2>
+                    <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+                        <div class="form-group">
+                            <label for="email"><i class="zmdi zmdi-email"></i></label>
+                            <input 
+                                type="email" 
+                                placeholder="Enter Your Email" 
+                                class="register-form text-danger mt-2" 
+                                id="email" 
+                                name="email" 
+                                [(ngModel)]="email" 
+                                #emailInput="ngModel" 
+                                required />
+                            <div *ngIf="emailInput.invalid && emailInput.touched" class="text-danger mt-3">
+                                Please enter a valid email.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                            <input 
+                                type="password" 
+                                placeholder="Enter Your Password" 
+                                class="register-form text-danger mt-2" 
+                                id="password" 
+                                name="password" 
+                                [(ngModel)]="password" 
+                                #passwordInput="ngModel" 
+                                required />
+                            <div *ngIf="passwordInput.invalid && passwordInput.touched" class="text-danger mt-3">
+                                Password is required.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="checkbox" id="remember-me" class="agree-term" [(ngModel)]="rememberMe" name="rememberMe" />
+                            <label for="remember-me" class="label-agree-term">
+                                <span><span></span></span>Remember me
+                            </label>
+                        </div>
+
+                        <div class="form-group form-button">
+                            <button type="submit" [disabled]="loginForm.invalid" class="form-submit">Log in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

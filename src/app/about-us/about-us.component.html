@@ -1,0 +1,80 @@
+<div class="page-banner overlay-dark bg-image" style="background-image: url('assets/img/bg_image_1.jpg');">
+    <div class="banner-section">
+      <div class="container text-center wow fadeInUp">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
+            <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About</li>
+          </ol>
+        </nav>
+        <h1 class="font-weight-normal">About Us</h1>
+      </div>
+    </div>
+  </div>
+  
+  <div class="page-section bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 py-3 wow zoomIn">
+          <div class="card-service">
+            <div class="circle-shape bg-secondary text-white">
+              <span class="mai-chatbubbles-outline"></span>
+            </div>
+            <p><span>Chat</span> with an expert</p>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 wow zoomIn">
+          <div class="card-service">
+            <div class="circle-shape bg-primary text-white">
+              <span class="mai-shield-checkmark"></span>
+            </div>
+            <p><span>One</span>-Click Solution</p>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 wow zoomIn">
+          <div class="card-service">
+            <div class="circle-shape bg-accent text-white">
+              <span class="mai-basket"></span>
+            </div>
+            <p><span>Online</span>-Cyber Cafe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="page-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 wow fadeInUp">
+          <h1 class="text-center mb-3">Welcome to Cheap Cafe</h1>
+          <div class="text-lg">
+            <p><b>Cheap Cafe</b> service is a cheap and convenient platform for retailers...</p>
+            <p>We assure our retailers of a safe and convenient platform...</p>
+            <p>Cheap Cafe will continuously strive to do the best for you.</p>
+          </div>
+        </div>
+        <div class="col-lg-10 mt-5">
+          <h1 class="text-center mb-5 wow fadeInUp">Our Team</h1>
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 wow zoomIn" *ngFor="let member of teamMembers">
+              <div class="card-doctor">
+                <div class="header">
+                  <img [src]="member.imageUrl" alt="{{ member.name }}">
+                  <div class="meta">
+                    <a href="#"><span class="mai-call"></span></a>
+                    <a href="#"><span class="mai-logo-whatsapp"></span></a>
+                  </div>
+                </div>
+                <div class="body">
+                  <p class="text-xl mb-0">{{ member.name }}</p>
+                  <span class="text-sm text-grey">{{ member.position }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<hr/>  

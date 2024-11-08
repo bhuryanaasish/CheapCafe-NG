@@ -1,0 +1,41 @@
+<div class="page-banner overlay-dark bg-image" style="background-image: url('/assets/img/bg_image_1.jpg');">
+    <div class="banner-section">
+      <div class="container text-center wow fadeInUp">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
+            <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Services</li>
+          </ol>
+        </nav>
+        <h1 class="font-weight-normal">Services</h1>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="section ourTeam">
+      <br />
+      <div class="row">
+        <div *ngFor="let service of services" class="col-xs-6 col-sm-4 col-md-3 i">
+          <div class="c text-center">
+            <div class="wrap">
+              <img [src]="service.image" alt="{{ service.name }}" width="270" height="270" class="img-responsive">
+              <div class="info">
+                <h4 class="name">{{ service.name }}</h4>
+                <h4 class="position">{{ service.position }}</h4>
+              </div>
+            </div>
+            <div class="more">
+              <ul>
+                <li *ngFor="let detail of service.description">{{ detail }}</li>
+              </ul>
+              <div>
+                <a [routerLink]="service.link" class="btn btn-primary">Apply Here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr/>

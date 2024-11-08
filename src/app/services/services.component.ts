@@ -19,7 +19,7 @@ export class ServicesComponent implements OnInit {
           'पैन कार्ड मे 5-10 दिन के अंदर सुधार कराए |'
         ],
         image: 'assets/img/services/PanCard.jpg',
-        link: '/pan-card'
+        link: '/services/pan-card'
       },
       {
         name: 'Income Certificate',
@@ -29,7 +29,7 @@ export class ServicesComponent implements OnInit {
           'आधार कार्ड, फोटो, मोबाइल न०, माता का नाम, व्यवसाय, किस कार्य के लिए आवश्यकता है |'
         ],
         image: 'assets/img/services/IncomeCertificate.jpg',
-        link: '/income-certificate'
+        link: '/services/income-certificate'
       },
       {
         name: 'Caste Certificate',
@@ -39,7 +39,7 @@ export class ServicesComponent implements OnInit {
           'आधार कार्ड, फोटो, मोबाइल न०, माता का नाम, व्यवसाय, किस कार्य के लिए आवश्यकता है |'
         ],
         image: 'assets/img/services/CasteCertificate.jpg',
-        link: '/caste-certificate'
+        link: '/services/caste-certificate'
       },
       {
         name: 'Domicile Certificate',
@@ -49,7 +49,7 @@ export class ServicesComponent implements OnInit {
           'आधार कार्ड, फोटो, मोबाइल न०, माता का नाम, व्यवसाय, किस कार्य के लिए आवश्यकता है |'
         ],
         image: 'assets/img/services/IncomeCertificate.jpg',
-        link: '/domicile-certificate'
+        link: '/services/domicile-certificate'
       },
       {
         name: 'Ayushman Card',
@@ -59,7 +59,7 @@ export class ServicesComponent implements OnInit {
           'पहले से बना हुआ या खोया हुआ आयुष्मान कार्ड निकलवाने के लिए आधार कार्ड, आधार कार्ड से लिंक मोबाइल नम्बर, आवेदक का नाम और पिता/पति का नाम होना जरूरी है|'
         ],
         image: 'assets/img/services/AyushmanCard.jpg',
-        link: '/ayushman-card'
+        link: '/services/ayushman-card'
       },
       {
         name: 'Passport',
@@ -69,7 +69,7 @@ export class ServicesComponent implements OnInit {
           'सबसे जल्दी पासपोर्ट की अपॉइंटमेंट प्राप्त करे|'
         ],
         image: 'assets/img/services/Passport.jpg',
-        link: '/passport'
+        link: '/services/passport'
       },
       {
         name: 'Driving Licence',
@@ -79,14 +79,14 @@ export class ServicesComponent implements OnInit {
           'सबसे जल्दी ड्राइविंग लाइसेंस की अपॉइंटमेंट प्राप्त करे|'
         ],
         image: 'assets/img/services/DrivingLicence.jpg',
-        link: '/driving-licence'
+        link: '/services/driving-licence'
       },
       {
         name: 'Ration Card',
         position: 'राशन कार्ड',
         description: ['एक दिन मे राशन कार्ड का आवेदन कराये|'],
         image: 'assets/img/services/RationCard.jpg',
-        link: '/ration-card'
+        link: '/services/ration-card'
       },
       {
         name: 'PM Kisan Samman Nidhi',
@@ -95,7 +95,7 @@ export class ServicesComponent implements OnInit {
           'यदि आपके नाम भी जमीन है तो जल्द उठाये किसान सम्मान निधि योजना का लाभ|'
         ],
         image: 'assets/img/services/PmKisan.jpg',
-        link: '/pm-kisan'
+        link: '/services/pm-kisan'
       },
       {
         name: 'HDFC Bank',
@@ -104,7 +104,7 @@ export class ServicesComponent implements OnInit {
           'यदि आप HDFC Bank मे खाता खुलवाने के लिए Apply बटन पर क्लिक करे|'
         ],
         image: 'assets/img/services/HDFC.png',
-        link: '/hdfc-account'
+        link: '/services/hdfc-account'
       },
       {
         name: 'AXIS Bank',
@@ -113,7 +113,7 @@ export class ServicesComponent implements OnInit {
           'यदि आप AXIS Bank मे खाता खुलवाने के लिए Apply बटन पर क्लिक करे|'
         ],
         image: 'assets/img/services/AXISBank.jpg',
-        link: '/axis-account'
+        link: '/services/axis-account'
       },
       {
         name: 'Insurance',
@@ -122,14 +122,14 @@ export class ServicesComponent implements OnInit {
           'किसी भी तरीके का बीमा कराने के लिए Apply बटन पर Click करे|'
         ],
         image: 'assets/img/services/Insurance.jpg',
-        link: '/insurance'
+        link: '/services/insurance'
       },
       {
         name: 'Union Bank',
         position: 'घर बैठे बैंक खाता खुलवाये |',
         description: ['यूनियन बैंक में खता खुलवाने के लिए घर पर ही सेवा |'],
         image: 'assets/img/services/UnionBank.jpg',
-        link: '/union-bank'
+        link: '/services/union-bank'
       },
       {
         name: 'AEPS Retailer',
@@ -138,7 +138,7 @@ export class ServicesComponent implements OnInit {
           'आधार कार्ड से पैसे निकालने, ट्रान्सफर करने वाली ID बनवाने के लिए Apply Button पर क्लिक करे |'
         ],
         image: 'assets/img/services/Ban-AEPS-01.jpg',
-        link: '/rnfi-retailer'
+        link: '/services/rnfi-retailer'
       },
       {
         name: 'PF (Provident Fund)',
@@ -147,14 +147,14 @@ export class ServicesComponent implements OnInit {
           'किसी भी कंपनी का PF निकलवाने के लिए Apply बटन पर क्लिक करे|'
         ],
         image: 'assets/img/services/PF.jpg',
-        link: '/provident-fund'
+        link: '/services/provident-fund'
       },
       {
         name: 'Pension',
         position: 'पेंशन',
         description: ['Coming Soon...'],
         image: 'assets/img/services/Pension.png',
-        link: '/'
+        link: '/services/pension'
       }
     ];
     

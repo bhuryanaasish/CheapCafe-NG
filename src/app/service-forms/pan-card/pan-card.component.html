@@ -1,0 +1,171 @@
+<div class="page-section">
+    <div class="container">
+      <div class="form-cover">
+        <h1 class="text-center">Pan Card</h1>
+  
+        <form #panCardForm="ngForm" (ngSubmit)="onSubmit()" class="mt-5">
+          <div class="row mb-3">
+  
+            <!-- Applicant Name -->
+            <div class="col-sm-6 py-2">
+              <label for="name"><b>Applicant Name</b></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                [(ngModel)]="formData.name"
+                #name="ngModel"
+                class="form-control"
+                placeholder="Full Name"
+                required
+              />
+              <div *ngIf="name.invalid && name.touched" class="text-danger">
+                <!-- <small *ngIf="name.errors?.required">Name is required.</small> -->
+              </div>
+            </div>
+  
+            <!-- Father/Husband Name -->
+            <div class="col-sm-6 py-2">
+              <label for="fatherName"><b>Father/Husband Name</b></label>
+              <input
+                type="text"
+                id="fatherName"
+                name="fatherName"
+                [(ngModel)]="formData.fatherName"
+                #fatherName="ngModel"
+                class="form-control"
+                placeholder="Father or Husband Name"
+                required
+              />
+              <div *ngIf="fatherName.invalid && fatherName.touched" class="text-danger">
+                <!-- <small *ngIf="fatherName.errors?.required">Father/Husband Name is required.</small> -->
+              </div>
+            </div>
+  
+            <!-- Email -->
+            <div class="col-sm-6 py-2">
+              <label for="email"><b>Email</b></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                [(ngModel)]="formData.email"
+                #email="ngModel"
+                class="form-control"
+                placeholder="Enter your email address"
+                required
+                email
+              />
+              <div *ngIf="email.invalid && email.touched" class="text-danger">
+                <!-- <small *ngIf="email.errors?.required">Email is required.</small>
+                <small *ngIf="email.errors?.email">Enter a valid email address.</small> -->
+              </div>
+            </div>
+  
+            <!-- Phone -->
+            <div class="col-sm-6 py-2">
+              <label for="phone"><b>Phone</b></label>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                [(ngModel)]="formData.phone"
+                #phone="ngModel"
+                class="form-control"
+                placeholder="Enter your phone number"
+                required
+                pattern="^[0-9]{10}$"
+              />
+              <div *ngIf="phone.invalid && phone.touched" class="text-danger">
+                <!-- <small *ngIf="phone.errors?.required">Phone number is required.</small>
+                <small *ngIf="phone.errors?.pattern">Enter a valid 10-digit phone number.</small> -->
+              </div>
+            </div>
+  
+            <!-- Subject -->
+            <div class="col-sm-6 py-2">
+              <label for="subject"><b>Subject</b></label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                [(ngModel)]="formData.subject"
+                #subject="ngModel"
+                class="form-control"
+                placeholder="Enter Subject"
+                required
+              />
+              <div *ngIf="subject.invalid && subject.touched" class="text-danger">
+                <!-- <small *ngIf="subject.errors?.required">Subject is required.</small> -->
+              </div>
+            </div>
+  
+            <!-- Aadhar Card Front -->
+            <div class="col-6 py-2">
+              <label for="aadharFront"><b>Aadhar Card Front</b></label>
+              <input
+                type="file"
+                id="aadharFront"
+                name="aadharFront"
+                [(ngModel)]="formData.aadharFront"
+                #aadharFront="ngModel"
+                class="form-control"
+                required
+              />
+              <div *ngIf="aadharFront.invalid && aadharFront.touched" class="text-danger">
+                <!-- <small *ngIf="aadharFront.errors?.required">Aadhar Card Front image is required.</small> -->
+              </div>
+            </div>
+  
+            <!-- Aadhar Card Back -->
+            <div class="col-6 py-2">
+              <label for="aadharBack"><b>Aadhar Card Back</b></label>
+              <input
+                type="file"
+                id="aadharBack"
+                name="aadharBack"
+                [(ngModel)]="formData.aadharBack"
+                #aadharBack="ngModel"
+                class="form-control"
+                required
+              />
+              <div *ngIf="aadharBack.invalid && aadharBack.touched" class="text-danger">
+                <!-- <small *ngIf="aadharBack.errors?.required">Aadhar Card Back image is required.</small> -->
+              </div>
+            </div>
+  
+            <!-- Photo -->
+            <div class="col-6 py-2">
+              <label for="photo"><b>Photo</b></label>
+              <input
+                type="file"
+                id="photo"
+                name="photo"
+                [(ngModel)]="formData.photo"
+                #photo="ngModel"
+                class="form-control"
+              />
+            </div>
+  
+            <!-- Signature -->
+            <div class="col-6 py-2">
+              <label for="signature"><b>Signature</b></label>
+              <input
+                type="file"
+                id="signature"
+                name="signature"
+                [(ngModel)]="formData.signature"
+                #signature="ngModel"
+                class="form-control"
+              />
+            </div>
+          </div>
+  
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary" [disabled]="panCardForm.invalid">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  
